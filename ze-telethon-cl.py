@@ -63,7 +63,7 @@ except FileNotFoundError:
     data = {
         '22665066': api_id,
         '92dbe89d182f72f427972d8993850130': api_hash,
-        ''6888638576:AAGzMZngCk_U6Cj07V4-Cnfm6idFe1R-4p8': bot_token,
+        '6888638576:AAGzMZngCk_U6Cj07V4-Cnfm6idFe1R-4p8': bot_token,
         '5705487207': DEVLOO,
         '40': MAX_ACCOUNTS,
         'l_s_I_I_bot': user_bot,
