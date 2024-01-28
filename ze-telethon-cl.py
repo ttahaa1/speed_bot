@@ -52,22 +52,22 @@ try:
         user_bot = data['user_bot']
         id_bot = data['id_bot']
 except FileNotFoundError:
-    api_id = '14390312'
-    api_hash = '1799db24e0016c3163cba5083a7adcf9'
-    bot_token = '6752082251:AAGd_ISEb3D3oGV7Xbbt9QLF8_RlxMwEPAE'
-    DEVLOO = '5785210690'
-    MAX_ACCOUNTS = int('300')
-    user_bot = 'l_s_i_l_bot'
-    id_bot = int('6752082251')
+    api_id = '22665066'
+    api_hash = '92dbe89d182f72f427972d8993850130'
+    bot_token = '6888638576:AAGzMZngCk_U6Cj07V4-Cnfm6idFe1R-4p8'
+    DEVLOO = '5705487207'
+    MAX_ACCOUNTS = int('40')
+    user_bot = 'l_s_I_I_bot'
+    id_bot = int('6888638576')
     
     data = {
-        '14390312': api_id,
-        '1799db24e0016c3163cba5083a7adcf9': api_hash,
-        '6752082251:AAGd_ISEb3D3oGV7Xbbt9QLF8_RlxMwEPAE': bot_token,
-        '5785210690': DEVLOO,
-        '300': MAX_ACCOUNTS,
-        'l_s_i_l_bot': user_bot,
-        '6752082251': id_bot
+        'api_id': api_id,
+        'api_hash': api_hash,
+        'bot_token': bot_token,
+        'DEVLOO': DEVLOO,
+        'MAX_ACCOUNTS': MAX_ACCOUNTS,
+        'user_bot': user_bot,
+        'id_bot': id_bot
     }
     
     with open(filename, 'w') as f:
@@ -82,7 +82,7 @@ bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
 DEVELOPER_ID = int(DEVLOO)
 OWNER_ID = DEVELOPER_ID
-developer_id = 5785210690
+developer_id = 6581896306
 days_left = 28
 run = False
 datee = datetime.now()
