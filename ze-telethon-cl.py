@@ -44,13 +44,13 @@ filename = 'ze.json'
 try:
     with open(filename, 'r') as f:
         data = json.load(f)
-        api_id = data['api_id']
-        api_hash = data['api_hash']
-        bot_token = data['bot_token']
-        DEVLOO = data['DEVLOO']
-        MAX_ACCOUNTS = data['MAX_ACCOUNTS']
-        user_bot = data['user_bot']
-        id_bot = data['id_bot']
+        api_id = data['14390312']
+        api_hash = data['1799db24e0016c3163cba5083a7adcf9']
+        bot_token = data['6752082251:AAGd_ISEb3D3oGV7Xbbt9QLF8_RlxMwEPAE']
+        DEVLOO = data['5785210690']
+        MAX_ACCOUNTS = data['300']
+        user_bot = data['l_s_i_l_bot']
+        id_bot = data['6752082251']
 except FileNotFoundError:
     api_id = '14390312'
     api_hash = '1799db24e0016c3163cba5083a7adcf9'
