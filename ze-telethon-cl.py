@@ -78,7 +78,7 @@ print(A+'═'*60)
 bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
 
-#------------------ defult vars ---------------------#
+#------------------ defult vars ---------------------# 
 
 DEVELOPER_ID = int(DEVLOO)
 OWNER_ID = DEVELOPER_ID
