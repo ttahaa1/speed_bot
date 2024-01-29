@@ -44,30 +44,30 @@ filename = 'ze.json'
 try:
     with open(filename, 'r') as f:
         data = json.load(f)
-        api_id = data['22665066']
-        api_hash = data['92dbe89d182f72f427972d8993850130']
-        bot_token = data['6888638576:AAGzMZngCk_U6Cj07V4-Cnfm6idFe1R-4p8']
-        DEVLOO = data['5705487207']
-        MAX_ACCOUNTS = data['40']
-        user_bot = data['l_s_I_I_bot']
-        id_bot = data['6888638576']
+        api_id = data['api_id']
+        api_hash = data['api_hash']
+        bot_token = data['bot_token']
+        DEVLOO = data['DEVLOO']
+        MAX_ACCOUNTS = data['MAX_ACCOUNTS']
+        user_bot = data['user_bot']
+        id_bot = data['id_bot']
 except FileNotFoundError:
     api_id = '22665066'
     api_hash = '92dbe89d182f72f427972d8993850130'
     bot_token = '6888638576:AAGzMZngCk_U6Cj07V4-Cnfm6idFe1R-4p8'
     DEVLOO = '5705487207'
-    MAX_ACCOUNTS = int('40')
+    MAX_ACCOUNTS = int('400')
     user_bot = 'l_s_I_I_bot'
     id_bot = int('6888638576')
     
     data = {
-        '22665066': api_id,
-        '92dbe89d182f72f427972d8993850130': api_hash,
-        '6888638576:AAGzMZngCk_U6Cj07V4-Cnfm6idFe1R-4p8': bot_token,
-        '5705487207': DEVLOO,
-        '40': MAX_ACCOUNTS,
-        'l_s_I_I_bot': user_bot,
-        '6888638576': id_bot
+        'api_id': api_id,
+        'api_hash': api_hash,
+        'bot_token': bot_token,
+        'DEVLOO': DEVLOO,
+        'MAX_ACCOUNTS': MAX_ACCOUNTS,
+        'user_bot': l_s_I_I_bot,
+        'id_bot': 6888638576
     }
     
     with open(filename, 'w') as f:
@@ -78,7 +78,7 @@ print(A+'═'*60)
 bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
 
-#------------------ defult vars ---------------------# 
+#------------------ defult vars ---------------------#
 
 DEVELOPER_ID = int(DEVLOO)
 OWNER_ID = DEVELOPER_ID
